@@ -1,3 +1,5 @@
+import * as Rx from "rxjs";
+
 /**
  *  RxJS in Action
  *  Listing 3.7
@@ -19,8 +21,6 @@ let candidates = [
 //--------------------------------------------------//
 Rx.Observable.from(candidates)
   .pluck('experience')
-  .take(2)
-  .do(val => console.log(`Visiting ${val}`))
+  .take(2)		// Takes only the first two elements (another filtering operator)
+  .do(val => console.log(`Visiting ${val}`)) 	// Performs the logging routine and passes along the observable sequence
   .subscribe();
-  // prints "Visiting JavaScript Guru"
-  //        "Visiting Historian"

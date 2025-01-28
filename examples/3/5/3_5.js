@@ -1,3 +1,5 @@
+import * as Rx from "rxjs";
+
 /**
  *  RxJS in Action
  *  Listing 3.5
@@ -21,5 +23,5 @@ Rx.Observable.from([
     },
   ])
   .pluck('amount')
-  .reduce(add, 0)
+  .reduce(add, 100)
   .subscribe(console.log);

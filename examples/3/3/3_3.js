@@ -4,7 +4,9 @@
  *  @author Paul Daniels
  *  @author Luis Atencio
  */
- Rx.Observable.from([
+import * as Rx from "rxjs";
+
+Rx.Observable.from([
    'The quick brown fox',
    'jumps over the lazy dog'
    ])

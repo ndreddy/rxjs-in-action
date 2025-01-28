@@ -1,3 +1,5 @@
+import * as Rx from "rxjs";
+
 /**
  *  RxJS in Action
  *  Listing 3.4

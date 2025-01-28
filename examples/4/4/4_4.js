@@ -4,6 +4,13 @@
  *  @author Paul Daniels
  *  @author Luis Atencio
  */
+
+/*
+Money value object: A value object is a design pattern used to represent simple immutable data structures whose
+equality is based not on the entity itself but on its values. In other words, two value objects are equal only if
+they have the same content or their corresponding properties contain the same values.
+These objects are ideal to transfer immutable state from one component to another.
+ */
 const Money = function (currency, val) {
   return {
     value: function () {
